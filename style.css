@@ -1,0 +1,242 @@
+body {
+  font-family: "Zen Dots", "Audiowide", sans-serif;
+  margin: 0;
+  padding: 0;
+  cursor: url("images/cherry.png"), auto;
+}
+
+.upper {
+  background-color: #5f1d4f ;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.left {
+  background-color: #ffffff;
+  width: 60%;
+  height: 150vh;
+}
+
+.right{
+  background-color: #f9ebf9;
+  background-position: center;
+  width: 40%;
+  height: 150vh;
+}
+
+#two_screen {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.title{
+  color: #5f1d4f;
+}
+
+.name{
+  color: #ffffff;
+  margin: 0 5vw;
+  margin-top: 7vw;
+  margin-left: 6vw;
+}
+
+h2 {
+  font-size: 5vw;
+  width: 80%;
+  margin: auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+h3 {
+  font-size: 1.5vw;
+  width: 80%;
+  margin: auto;
+  margin-top: 4vh;
+  margin-bottom: 1vh;
+  margin-left: 11vw;
+} 
+
+h4 {
+  font-size: 1.5vw;
+  width: 80%;
+  margin: auto;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+}
+
+h6 {
+  font-size: 1vw;
+  width: 80%;
+  margin: auto;
+}
+
+p {
+  font-size: 1vw;
+  line-height: 2vw;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2vw;
+}
+
+a {
+  cursor: url("images/cherry.png"), auto;
+}
+
+a[href="#about_me"] {
+  color: #ffffff;
+  font-size: 1vw;
+  text-decoration: none;
+  font-weight: none;
+  margin-left: 30vw;
+  margin-right: 10vw;
+}
+
+a[href="#contact"] {
+  color: #ffffff;
+  font-size: 1vw;
+  text-decoration: none;
+  font-weight: none;
+  margin-left: 0vw;
+  margin-right: 8vw;
+}
+
+.carrousel {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 1vw 0vw;
+  margin-left: 1vw;
+  cursor: url("images/cherry.png"), auto;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+}
+
+.photo_element {
+  flex: 1 0 auto;
+  margin: 2vw 3vw;
+  background-color: white;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32vw;
+  height: 32vw;
+}
+
+.my_photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Recorta la imagen manteniendo la proporción */
+}
+
+.social_container {
+  font-size: 2.2vw;
+  position: relative;
+  display: inline-block;
+  margin-left: 7vw;
+  margin-right: 20vw;
+  margin-bottom: 2vw;
+}
+
+.gif-overlay {
+  position: absolute;
+  top: -1vw;
+  left: -1vw;
+  width: 17vw;
+  height: 4vw;
+  pointer-events: none;
+}
+
+img {
+  cursor: url("images/cherry.png"), auto;
+}
+
+img[alt] {
+  border-radius: 50%;
+}
+
+[type="radio"] {
+  margin: 10px;
+}
+
+[type="checkbox"] {
+  margin: 20px;
+}
+
+a[href="https://gatopedia.fandom.com/es/wiki/El_Gato_(Meme)"] {
+  color: greenyellow;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.right > button {
+  background-color: #5f1d4f;
+  color: white;
+  padding: 0.5vw 2vw;
+  border: 0.5vw solid transparent;
+  border-radius: 100vmax;
+  cursor: url(images/cherry.png), pointer;
+  transition: .2s;
+}
+
+.right > button:hover {
+  border: 0.5vw solid #5f1d4f;
+  color: #ffffff;
+  background: transparent;
+}
+
+#open {
+  margin-left: 14vw;
+}
+
+.modal {
+  width: 25vw;
+  background: #ffffff;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  flex-direction: column;
+  padding: 3vw;
+  border-radius: 0.5vw;
+  text-align: center;
+  gap: 1vw;
+  transform: scale(.1);
+  pointer-events: none;
+  transition: .2s;
+  opacity: 0;
+  border: 1vw solid #5f1d4f;
+}
+
+.modal > button, #send {
+  background-color: #5f1d4f;
+  color: white;
+  padding: 0.5vw 2vw;
+  border: 0.5vw solid transparent;
+  border-radius: 100vmax;
+  cursor: url(images/cherry.png), pointer;
+  transition: .2s;
+}
+
+.modal > button:hover, #send:hover {
+  background-color: #ffffff;
+  color:  #5f1d4f;
+  border: 0.5vw solid #5f1d4f;
+  cursor: url(images/cherry.png), pointer;
+}
+
+.modal > img {
+  height: 2vw;
+}
+
+.modal-show {
+  transform: translate(-80%, -170%) scale(1);
+  pointer-events: unset;
+  transition: .2s;
+  opacity: 1;
+}

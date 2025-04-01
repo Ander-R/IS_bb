@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>About_me_page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="upper">
+      <h4><span class="name">Anderson Ramirez</span></h4>
+      <a href="#about_me">Sobre mi</a>
+      <a href="#contact">Contactos</a>
+    </div>
+
+    <section id="two_screen">
+      <div class="left">
+        <h2 id="about_me"><span class="title">Hey</span></h2>
+        <p>Soy Anderson Ramírez, quizás recuerdes peliculas como "Juego de Gemelas", "El Diario de una Típica Adolescente" o incluso "Herbie a Toda Marcha", pues yo no actué en ninguna de ellas, esa fue Lindsay Lohan. Yo soy un estudiante de computación en la Universidad de Costa Rica.</p>
+        <p>Usualmente no estoy haciendo mucho cuando no hago cosas de la universidad. Suelo existir, estar con mis gatos, pensar en comida, jugar algun videojuego, estar al pendiente de que debo terminar un libro sin hacerlo activamente, o sufriendo ansiedad por el constante y venidero final de los tiempos. No, wait, eso más bien me da una especie de paz.</p>
+        <p>No tengo mucho que decir, espero que estar en el enfasis de "Ingenieria en Software" haga que alguien me llame "Ingeniero" o estaré muy decepcionado.</p>
+        <h4 id="contact"><span class="title">Contactame</span></h4>
+        <div class="social_container">
+          <a href="https://www.facebook.com/anderson.ramirez.5203">VISITAAAR</a>
+          <img src="images/facebook.gif" class="gif-overlay">
+        </div>
+        <div class="social_container">
+          <a href="https://www.instagram.com/ander_rmz?igsh=MTRrc2M1N3JhOXQ0dQ==">VISITAAAR</a>
+          <img src="images/instagram.gif" class="gif-overlay">
+        </div>
+        <div class="social_container">
+          <a href="mailto:anderso.ramirez@ucr.ac.cr">VISITAAAR</a>
+          <img src="images/correo.gif" class="gif-overlay">
+        </div>
+        <h6>*Terminos y condiciones pendientes.</h6>
+      </div>
+
+      <div class="right">
+        <h3><span class="title">Fotos de mi persona</span></h3>
+        <div class="carrousel">
+          <div class="photo_element">
+            <img class="my_photo" src="images/1.png">
+          </div>
+          <div class="photo_element">
+            <img class="my_photo" src="images/2.png">
+          </div>
+          <div class="photo_element">
+            <img class="my_photo" src="images/3.png">
+          </div>
+          <div class="photo_element">
+            <img class="my_photo" src="images/4.png">
+          </div>
+          <div class="photo_element">
+            <img class="my_photo" src="images/5.png">
+          </div>
+        </div>
+        <button id="open">Clickea aquí</button>
+        <div class="modal">
+          <p>Me gustan el chisme.</p>
+          <img src="images/hear.gif">
+          <form id="theForm">
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="emailError" class="error"></span>
+          
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+          
+            <button id="send">Enviar</button>
+          </form>
+          <button id="close">Cerrar</button>
+        </div>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
